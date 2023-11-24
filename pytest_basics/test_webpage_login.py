@@ -2,7 +2,7 @@ from selenium import webdriver
 
 
 def test_google():
-    driver = webdriver.Chrome(r'C:\Users\hp\Desktop\IT\Testing\Frameworks\Pytest\Chromedriver\chromedriver-win64\chromedriver.exe')
+    driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     driver.maximize_window()
     driver.get("http://www.google.com")
@@ -10,17 +10,23 @@ def test_google():
     driver.quit()
 
 
-# def test_facebook():
-#     driver = webdriver.Chrome(r"C:\Users\hp\Desktop\IT\Testing\Frameworks\Pytest\Chromedriver\chromedriver-win64\chromedriver.exe")
-#     driver.implicitly_wait(10)
-#     driver.maximize_window()
-#     driver.get("http://www.facebook.com")
-#     assert driver.title == "Facebook"
-#     driver.quit()
+def test_facebook():
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(10)
+    driver.maximize_window()
+    driver.get("http://www.facebook.com")
+    assert driver.title == "Facebook – log in or sign up"
+    driver.quit()
 
 
 
-
+def test_amezon():
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(10)
+    driver.maximize_window()
+    driver.get("http://www.amezon.com")
+    assert driver.title == "amezon"
+    driver.quit()
 
 
 
