@@ -1,9 +1,10 @@
 from Page_Objects.Login_Page import Login
+from Utilities.readProperties import ReadConfig
 
 class Test_001_Login:
-    baseURL = "https://admin-demo.nopcommerce.com/"
-    username = "admin@yourstore.com"
-    password = "admin"
+    baseURL = ReadConfig.get_Application_URL()
+    username = ReadConfig.get_Username()
+    password = ReadConfig.get_Password()
 
     def get_homepage_title(self, setup):
         self.driver = setup

@@ -21,8 +21,8 @@ Step:1 === Folder structures
 * Reports
 * Run.bat:
 
-
-
-
-
+Step:2 === Folder structures
+* Create "Login_Page.py" object class under Page_Objects folder
+* Create "test_Login.py" Test_Cases
+* Create "conftest" Test_Cases
 
